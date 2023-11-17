@@ -11,3 +11,6 @@
 
 #define MICROPY_HW_I2C1_SCL                 (15)
 #define MICROPY_HW_I2C1_SDA                 (16)
+
+
+#define MICROPY_REPL_EVENT_DRIVEN           (0)

@@ -27,6 +27,7 @@
 #include "py/runtime.h"
 #include "py/mphal.h"
 #include "usb_serial_jtag.h"
+#include "micro.h"
 
 #if CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG
 

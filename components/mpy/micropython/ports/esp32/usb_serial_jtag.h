@@ -29,5 +29,6 @@
 void usb_serial_jtag_init(void);
 void usb_serial_jtag_poll_rx(void);
 void usb_serial_jtag_tx_strn(const char *str, size_t len);
+char *  usb_get_from_peecee();
 
 #endif // MICROPY_INCLUDED_ESP32_USB_SERIAL_JTAG_H

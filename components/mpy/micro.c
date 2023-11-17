@@ -82,6 +82,8 @@ void mp_embed_exec_str(const char *src) {
         mp_parse_tree_t parse_tree = mp_parse(lex, MP_PARSE_FILE_INPUT);
         mp_obj_t module_fun = mp_compile(&parse_tree, source_name, true);
         mp_call_function_0(module_fun);
+        mp_hal_set_interrupt_char(-1); // disable interrupt
+        mp_handle_pending(true); 
         nlr_pop();
         
     } else {
